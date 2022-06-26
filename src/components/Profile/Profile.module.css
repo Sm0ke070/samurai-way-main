@@ -2,3 +2,11 @@
     grid-area: c;
     background-color: cadetblue;
 }
+
+.item {
+    color: red;
+}
+
+.posts {
+    color: aqua;
+}

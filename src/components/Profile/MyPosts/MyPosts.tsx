@@ -1,8 +1,19 @@
 import React from 'react';
 import style from './MyPosts.module.css'
 import Post from "./Post/Post";
+import {postsType} from "../../../App";
 
-const MyPosts = () => {
+/*type postsType={
+    id:number,
+    message:string,
+    likesCount:number,
+}*/
+
+type MyPostsType={
+    posts:Array<postsType>
+}
+const MyPosts = (props:MyPostsType) => {
+    let postElements = props.posts.map(p => <Post message={p.message} likesCount={p.likesCount}/>)
     return (
         <div className={style.postBlock}>
             My post
@@ -12,9 +23,7 @@ const MyPosts = () => {
                 </div>
                 <button>Add post</button>
                 <div className={style.posts}>
-                    <Post message="Hi, how are you"/>
-                    <Post message="123"/>
-                    <Post message="hello world"/>
+                    {postElements}
                 </div>
             </div>
         </div>

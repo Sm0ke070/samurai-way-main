@@ -2,26 +2,20 @@
     grid-area: n;
     background-color: #e4e7e9;
     padding: 15px;
-     /*vk*/
 }
-
 .item {
     height: 15px;
     padding: 7px 7px 11px;
 }
-
 .item a {
     color: #5c82a6;
     text-decoration: none;
     font-family: verdana;
 }
-
 .item:hover {
     background-color: #dcdfe6;
-
 }
-
-.item activeLink {
+.activeLink  {
     color: #146614;
     font-size: 18px;
 }

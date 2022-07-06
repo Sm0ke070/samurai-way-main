@@ -4,7 +4,10 @@
 }
 
 .dialogItems {
+    margin: 0 8px;
     padding: 10px;
+    color: #ff0000;
+    background-color: #e4e7e9;
 }
 
 .dialogItems .active{
@@ -13,6 +16,7 @@
 
 .messages {
     padding: 10px;
+    background-color: #e4e7e9;
 }
 
 .message {

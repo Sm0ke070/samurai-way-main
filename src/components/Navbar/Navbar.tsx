@@ -7,27 +7,27 @@ const Navbar = () => {
         <nav className={style.nav}>
             <div className={style.item}>
                 <NavLink to="/profile" activeClassName={style.activeLink}>
-                    <div>Profile</div>
+                    <div className={style.btn}>Profile</div>
                 </NavLink>
             </div>
             <div className={style.item}>
                 <NavLink to="/dialogs" activeClassName={style.activeLink}>
-                    <div>Messages</div>
+                    <div className={style.btn}>Messages</div>
                 </NavLink>
             </div>
             <div className={style.item}>
                 <NavLink to="/news" activeClassName={style.activeLink}>
-                    <div>News</div>
+                    <div className={style.btn}>News</div>
                 </NavLink>
             </div>
             <div className={style.item}>
                 <NavLink to="/music" activeClassName={style.activeLink}>
-                    <div>Music</div>
+                    <div className={style.btn}>Music</div>
                 </NavLink>
             </div>
             <div className={style.item}>
                 <NavLink to="/settings" activeClassName={style.activeLink}>
-                    <div>Settings</div>
+                    <div className={style.btn}>Settings</div>
                 </NavLink>
             </div>
         </nav>

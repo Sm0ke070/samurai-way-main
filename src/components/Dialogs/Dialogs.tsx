@@ -1,7 +1,7 @@
 import style from './Dialogs.module.css';
 import DialogItem from "./DialogItem/DialogItem";
 import Message from "./Message/Message";
-import {dialogsDataType, messageDataType} from "../../App";
+import {appStateType, messageType} from "../../App";
 
 /*type dialogsDataType = {
     id: number,
@@ -13,12 +13,13 @@ type messageDataType = {
 }*/
 
 type dialogsType = {
-    dialogsData:Array<dialogsDataType>,
-    messageData:Array<messageDataType>,
+    //dialogsData: Array<dialogsType>,
+    //messageData: Array<messageType>,
+    appState: appStateType[]
 }
-const Dialogs = (props:dialogsType) => {
-    let dialogsElements = props.dialogsData.map(d => <DialogItem name={d.name} id={d.id}/>)
-    let messagesElement = props.messageData.map(m => <Message message={m.message} id={m.id}/>)
+const Dialogs = (props: dialogsType) => {
+    let dialogsElements = props.appState.map(d => <DialogItem name={d.dialogs.name} id={d.dialogs.id}/>)
+    let messagesElement = props.appState.map(m => <Message message={m.messages.message} id={m.messages.id}/>)
 
     return (
         <div className={style.dialogs}>

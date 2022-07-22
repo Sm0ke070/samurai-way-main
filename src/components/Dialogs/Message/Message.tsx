@@ -1,10 +1,8 @@
 import style from './../Dialogs.module.css';
+import {messageType} from '../../../redux/state'
 
-type MessageType = {
-    message: string;
-    id: number;
-}
-const Message = (props: MessageType) => {
+
+const Message = (props: messageType) => {
     return (
         <div className={style.dialog}>
             {props.message}

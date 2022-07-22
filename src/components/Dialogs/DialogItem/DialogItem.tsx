@@ -12,6 +12,7 @@ const DialogItem = (props: DialogItemType) => {
             <NavLink to={path}>
                 {props.name}
             </NavLink>
+
         </div>
     );
 }
